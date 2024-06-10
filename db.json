@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "title": "Update",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "price": 666,
+      "category": "2",
+      "isShow": true,
+      "date": "2020-06-24T09:00:00.000Z",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "email@gmail.com",
+      "password": "$2a$10$PgepDOVu4wh1ZKLmqrxPru9eu054BQJtiQZ8GVueYxqCly1e.k/rm",
+      "id": 1
+    },
+    {
+      "email": "email2@gmail.com",
+      "password": "$2a$10$vz08eHnoruyH5AtknP9tc.mWV5xBdBmPm.YsB3NsZ9hRj.CECFNRq",
+      "id": 2
+    }
+  ]
+}

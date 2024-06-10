@@ -1,0 +1,33 @@
+<form [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="email"
+    />
+    @if(registerForm.controls['email'].errors?.['required'] &&
+    registerForm.controls['email'].touched) {
+    <small class="text-danger">Required</small>
+    } @if(registerForm.controls['email'].errors?.['email'] &&
+    registerForm.controls['email'].touched) {
+    <small class="text-danger">Email format</small>
+    }
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputPassword1"
+      formControlName="password"
+    />
+    @if(registerForm.controls['password'].errors?.['required'] &&
+    registerForm.controls['password'].touched) {
+    <small class="text-danger">Required</small>
+    }
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
